@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="page">
+    <div class="search">
+      <form action="/" method="get" role="search" class="search__form">
+        <input type="search" id="search" class="search__input" name="q" placeholder="What are you looking for?" aria-label="Search through site content">
+        <i class="fa-solid fa-magnifying-glass search__submit" title="Search"></i>
+      </form>
+      <span class="search__close" title="Close">&#10005;</span>
+    </div>
     <div class="container">
       <header class="page-header">
         <div class="page-header__top">
@@ -152,7 +159,7 @@
                   </div>
                 </div>
               </address><!-- Page main contact info -->
-              <form action="index.html" method="get" class="page-main__contact-form">
+              <form action="/" method="get" class="page-main__contact-form">
                 <label for="name" class="page-main__contact-label">Full Name</label>
                 <input type="text" name="name" id="name" class="page-main__contact-input" placeholder="Name">
                 <label for="email" class="page-main__contact-label">Email</label>

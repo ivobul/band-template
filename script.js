@@ -1,7 +1,37 @@
 let myIndex = 0;
 const mobileMenu = document.querySelector(".page-header__mobile");
-const mobileMenuIcon = document.querySelector(".fa-bars")
-const nav = document.querySelector(".page-header__nav")
+const mobileMenuIcon = document.querySelector(".fa-bars");
+const searchPanel = document.querySelector(".search");
+const searchForm = document.querySelector(".search__form");
+const searchInput = document.querySelector(".search__input");
+const searchSubmit = document.querySelector(".search__submit");
+const searchClose = document.querySelector(".search__close");
+const searchIcon = document.querySelector(".page-header__search");
+const bodyElem = document.querySelector(".page");
+const nav = document.querySelector(".page-header__nav");
+
+// Search panel
+searchIcon.addEventListener("click", () => {
+  bodyElem.classList.add("page--overflow-hidden");
+  searchPanel.classList.add("search--active");
+  searchInput.focus();
+});
+
+searchSubmit.addEventListener("click", () => {
+  searchForm.submit();
+});
+
+searchClose.addEventListener("click", () => {
+  bodyElem.classList.remove("page--overflow-hidden");
+  searchPanel.classList.remove("search--active");
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 767) {
+    bodyElem.classList.remove("page--overflow-hidden");
+    searchPanel.classList.remove("search--active");
+  }
+});
 
 // Mobile menu
 mobileMenu.addEventListener("click", () => {
