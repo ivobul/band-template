@@ -81,8 +81,12 @@ a {
 :root {
   --nav-padding: 14px 24px;
   --section-padding: 80px 24px;
-  --color-1: #000;
-  --color-2: #fff;
+  --main-color-1: #000;
+  --main-color-2: #fff;
+  --navbar-color: #282828;
+  --hoverable-color-1: #D0D0D0;
+  --hoverable-color-2: #181818;
+  --hoverable-color-3: #c10404;
   --text-transform-title: uppercase;
 }
 
@@ -187,7 +191,8 @@ a {
 
 /* Page header top */
 .page-header__top {
-  background-color: var(--color-1);
+  background-color: var(--navbar-color);
+  color: var(--main-color-2);
   display: flex;
   position: fixed;
   width: 100%;
@@ -195,19 +200,18 @@ a {
 }
 
 .page-header__logo {
-  color: var(--color-2);
   padding: var(--nav-padding);
   text-transform: var(--text-transform-title);
   transition: .3s;
 }
 
 .page-header__logo:visited {
-  color: var(--color-2);
+  color: var(--main-color-2);
 }
 
 .page-header__logo:hover {
-  background-color: #D0D0D0;
-  color: #181818;
+  background-color: var(--hoverable-color-1);
+  color: var(--hoverable-color-2);
 }
 
 .page-header__list {
@@ -215,15 +219,15 @@ a {
 }
 
 .page-header__list-item {
-  color: var(--color-2);
+  color: var(--main-color-2);
   display: flex;
   position: relative;
   transition: .3s;
 }
 
 .page-header__list-item:hover {
-  background-color: #D0D0D0;
-  color: #181818;
+  background-color: var(--hoverable-color-1);
+  color: var(--hoverable-color-2);
 }
 
 .page-header__list-link {
@@ -233,7 +237,7 @@ a {
 }
 
 .page-header__sub-list {
-  background-color: var(--color-2);
+  background-color: var(--main-color-2);
   box-shadow: 0px -1px 3px 0px rgba(0, 0, 0, .35);
   display: none;
   position: absolute;
@@ -251,37 +255,35 @@ a {
 }
 
 .page-header__sub-list-link:hover {
-  background-color: #D0D0D0;
+  background-color: var(--hoverable-color-1);
 }
 
 .page-header__btn {
+  background-color: inherit;
   border: none;
+  color: inherit;
   cursor: pointer;
   outline: none;
   padding: var(--nav-padding);
 }
 
 .page-header__search {
-  background-color: var(--color-1);
-  color: var(--color-2);
   margin-left: auto;
   transition: .3s;
 }
 
 .page-header__search:hover {
-  background-color: #e50000;
+  background-color: var(--hoverable-color-3);
 }
 
 .page-header__mobile {
-  background-color: var(--color-1);
-  color: var(--color-2);
   display: none;
   transition: .3s;
 }
 
 .page-header__mobile:hover {
-  background-color: #D0D0D0;
-  color: #181818;
+  background-color: var(--hoverable-color-1);
+  color: var(--hoverable-color-2);
 }
 
 /* Page header main */
@@ -289,7 +291,7 @@ a {
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: var(--color-2);
+  color: var(--main-color-2);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -330,13 +332,13 @@ a {
 
 /* Page main band */
 .page-main__band {
-  background-color: var(--color-2);
+  background-color: var(--main-color-2);
   padding: var(--section-padding);
   text-align: center;
 }
 
 .page-main__band-title {
-  color: var(--color-1);
+  color: var(--main-color-1);
 }
 
 .page-main__band-copy {
@@ -361,17 +363,17 @@ a {
 
 /* Page main tour */
 .page-main__tour {
-  background-color: var(--color-1);
+  background-color: var(--main-color-1);
   padding: var(--section-padding);
   text-align: center;
 }
 
 .page-main__tour-title {
-  color: var(--color-2);
+  color: var(--main-color-2);
 }
 
 .page-main__tour-months {
-  background-color: var(--color-2);
+  background-color: var(--main-color-2);
   margin: 50px auto 0;
   max-width: 800px;
   width: 100%;
@@ -388,15 +390,15 @@ a {
 
 .ticket-no {
   background-color: #e50000;
-  color: var(--color-2);
+  color: var(--main-color-2);
   margin-left: 25px;
   padding: 2px 10px;
 }
 
 .ticket-yes {
-  background-color: var(--color-1);
+  background-color: var(--main-color-1);
   border-radius: 50%;
-  color: var(--color-2);
+  color: var(--main-color-2);
   margin-left: auto;
   padding: 2px 10px;
 }
@@ -419,13 +421,13 @@ a {
 }
 
 .page-main__tour-card-main {
-  background-color: var(--color-2);
+  background-color: var(--main-color-2);
   padding: 20px;
   text-align: left;
 }
 
 .page-main__tour-card-title {
-  color: var(--color-1);
+  color: var(--main-color-1);
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
@@ -435,9 +437,9 @@ a {
 }
 
 .page-main__tour-card-btn {
-  background-color: var(--color-1);
+  background-color: var(--main-color-1);
   border: 1px solid transparent;
-  color: var(--color-2);
+  color: var(--main-color-2);
   cursor: pointer;
   margin-top: 15px;
   padding: 8px 14px;
@@ -446,17 +448,17 @@ a {
 }
 
 .page-main__tour-card-btn:hover {
-  background-color: #D0D0D0;
-  color: #181818;
+  background-color: var(--hoverable-color-1);
+  color: var(--hoverable-color-2);
 }
 
 /* Page main contact */
 .page-main__contact-title {
-  color: var(--color-1)
+  color: var(--main-color-1)
 }
 
 .page-main__contact-main {
-  background-color: var(--color-2);
+  background-color: var(--main-color-2);
   padding: var(--section-padding);
   text-align: center;
 }
@@ -508,9 +510,9 @@ a {
 }
 
 .page-main__contact-btn {
-  background-color: var(--color-1);
+  background-color: var(--main-color-1);
   border: 1px solid transparent;
-  color: var(--color-2);
+  color: var(--main-color-2);
   cursor: pointer;
   display: block;
   margin-top: 10px;
@@ -521,8 +523,8 @@ a {
 }
 
 .page-main__contact-btn:hover {
-  background-color: #D0D0D0;
-  color: #181818;
+  background-color: var(--hoverable-color-1);
+  color: var(--hoverable-color-2);
 }
 
 .page-main__contact-map {
@@ -533,7 +535,7 @@ a {
 
 /* Page footer */
 .page-footer {
-  background-color: var(--color-2);
+  background-color: var(--main-color-2);
   padding: var(--section-padding);
   text-align: center;
 }
