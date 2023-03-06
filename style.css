@@ -308,6 +308,7 @@ a {
 
 .bg3 {
   background-image: url(images/bg-la.jpg);
+  background-position: right top;
 }
 
 .hide {
@@ -555,7 +556,7 @@ a {
   color: darkgray;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   :root {
     --nav-padding: 14px 20px;
     --section-padding: 80px 20px;
@@ -619,10 +620,6 @@ a {
     background-position: center top;
   }
   
-  .bg3 {
-    background-position: right top;
-  }
-
   .page-header__title,
   .page-header__copy {
     display: none;
