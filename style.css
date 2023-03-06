@@ -288,7 +288,6 @@ a {
 
 /* Page header main */
 .page-header__slider {
-  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--main-color-2);
@@ -297,19 +296,18 @@ a {
   justify-content: center;
   flex-direction: column;
   padding: var(--section-padding);
-  text-align: center;
 }
 
 .bg1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/bg-ny.jpg);
+  background-image: url(images/bg-ny.jpg);
 }
 
 .bg2 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/bg-chicago.jpg);
+  background-image: url(images/bg-chicago.jpg);
 }
 
 .bg3 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/bg-la.jpg);
+  background-image: url(images/bg-la.jpg);
 }
 
 .hide {
@@ -317,12 +315,14 @@ a {
 }
 
 .page-header__title {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-left: 185px;
   margin-bottom: 10px;
 }
 
 .page-header__copy {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  margin-left: 185px;
 }
 
 /* Page main */
@@ -612,15 +612,15 @@ a {
   }
 
   .bg1 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(images/bg-ny.jpg);
+    background-position: center top;
   }
 
   .bg2 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(images/bg-chicago.jpg);
+    background-position: center top;
   }
   
   .bg3 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(images/bg-la.jpg);
+    background-position: right top;
   }
 
   .page-header__title,
